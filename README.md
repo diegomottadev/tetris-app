@@ -54,3 +54,98 @@ To run the "pesitos" frontend on your computer, you'll need to install Node.js a
 ## Snapshot
 
 ![image](https://github.com/diegomottadev/tetris-app/assets/64202326/b0b0fce5-b1d1-45ee-a5df-b9e7c31f4abb)
+
+# Project Overview:
+
+- The project follows an object-oriented structure with classes representing different game elements.
+- It utilizes ES6 features such as classes, arrow functions, and template literals.
+- The game loop in Game.js orchestrates the update and draw processes for continuous gameplay.
+- The code seems to be organized, providing clear separation of concerns for different components.
+
+## More details
+
+### Block.js
+
+- Class Definition (Block): represents a block in the game.
+- Constructor initializes game-related properties and block dimensions.
+- update method moves the block down if not stopped.
+- draw method renders the block on the canvas.
+
+### UI.js
+
+- Class Definition (UI): manages the game's user interface.
+- Constructor initializes UI properties such as message position and combo timer.
+- update method updates the UI based on the game's combo state.
+- drawScore method renders the score on the canvas.
+- gameOver method renders the game over message.
+- confirmReset method renders the reset confirmation.
+
+### Shape.js
+
+- Class Definition (Shape - extends Block): represents a shape composed of multiple blocks.
+- Constructor generates a random shape, sets its color, and initializes its position.
+- update method moves the shape down if not stopped.
+- draw method renders the entire shape on the canvas.
+- Additional methods handle shape manipulation (rotation, movement, etc.).
+
+### Pieces.js
+
+- Constant Definition (PIECES): defines various shapes as arrays of 0s and 1s.
+
+
+### InputHandler.js
+
+- Class Definition (InputHandler):
+- Handles user input events.
+- Listens for keydown and click events to trigger game actions (move, rotate, pause, etc.).
+
+### Game.js
+- Class Definition (Game): manages the game state, including the falling block, stopped blocks, and UI.
+- Constructor initializes game properties such as width, height, and block size.
+- update method handles game logic based on different states (reset, game over, paused).
+- draw method renders the game elements on the canvas.
+- Various methods handle game actions (move, drop, rotate, reset confirmation).
+- Collision detection logic ensures proper block interaction.
+
+# A challenge for you
+
+If you want to challenge your algorithmic logic and use JavaScript, follow this prompt to develop a Tetris game using JavaScript with Vite:
+
+### General Description:
+
+Develop a Tetris game using JavaScript and the Vite build tool to facilitate development and dependency management. The game should follow the basic rules of Tetris, where pieces fall from the top of the screen, and the player must arrange them to complete rows and earn points.
+
+## Specific Requirements:
+
+### Project Structure:
+
+- Use Vite to set up the project and manage dependencies.
+- Divide the code into modules and classes for clear and maintainable organization.
+
+### Game Elements:
+
+- Implement a Block class representing individual blocks in the game.
+- Create a Shape class that extends the Block class and represents different falling shapes.
+- Define constants for different piece shapes using a matrix of 0s and 1s.
+
+### Game Logic:
+
+- Manage the game state with a main class named Game.
+- Implement logic for pieces to fall, move, rotate, and stop when touching other pieces.
+- Check for completed rows and update the player's score.
+
+### User Interface (UI):
+
+- Design a simple yet effective user interface to display the score, game messages, and any other relevant information.
+- Add pause and restart functionalities.
+
+### User Input:
+
+- Handle user input to allow lateral movement, rotation, and pausing of the game.
+
+### Optional Extras:
+
+- Implement smooth animations for piece movement and rotation.
+- Add visual and sound effects to enhance the player's experience.
+- Provide configuration options, such as piece falling speed.
+- Include support for mobile devices.
