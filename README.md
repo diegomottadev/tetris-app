@@ -31,6 +31,26 @@ Game Logic: implements core Tetris logic, including piece falling, rotation, lin
 - Code Efficiency: the efficiency of the code (in terms of algorithms and performance) is not explicitly addressed. Further optimization may be required for resource-intensive scenarios.
 - User Experience (UX): the code focuses on functionality but does not include considerations for improving the overall user experience, such as animations or visual effects.
 
+## Installation Guide
+
+To run the "pesitos" frontend on your computer, you'll need to install Node.js and a Node.js package manager like npm or Yarn. Then, you can follow these steps to set up your development environment:
+
+### Clone the project:
+
+    git clone https://github.com/diegomottadev/tetris-app.git
+    
+### Install dependencies:
+
+    npm install
+
+### Run the application
+
+    npm run dev
+    
+### Check in your favorite browser
+
+    http://127.0.0.1:5173/
+
 ## Snapshot
 
 ![image](https://github.com/diegomottadev/tetris-app/assets/64202326/b0b0fce5-b1d1-45ee-a5df-b9e7c31f4abb)
