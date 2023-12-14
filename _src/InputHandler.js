@@ -36,6 +36,31 @@ export class InputHandler {
           }
       });
 
-    
+      // Agrega un event listener para el evento de clic del mouse
+      window.addEventListener("click", (e) => {
+          // Switch basado en el botón clickeado
+          switch (this.game.ui.buttonClicked(e.offsetX, e.offsetY)) {
+              case this.game.ui.START_STOP:
+                  // Inicia o detiene el juego dependiendo del estado actual
+                  this.game.paused = !this.game.paused;
+                  break;
+              case this.game.ui.RESET:
+                  // Confirma el reinicio del juego
+                  this.game.confirmReset();
+                  break;
+              case this.game.ui.CONFIRM:
+                  // Confirma el reinicio del juego
+                  this.game.reset = true;
+                  break;
+              case this.game.ui.CANCEL:
+                  // Cancela el reinicio del juego y restablece las variables de estado
+                  this.game.reset = false;
+                  this.game.ui.reset = false;
+                  this.game.paused = false;
+                  break;
+              default:
+                  break;
+          }
+      });
   }
 }
