@@ -1,4 +1,4 @@
-# Tetris on Javascript pure
+# Tetris on Javascript
 
 This project showcases a simple implementation of the classic game Tetris using JavaScript and the HTML <canvas> element. Tetris is a puzzle game that challenges player coordination and mental agility by manipulating falling blocks to complete lines on the game board.
 
