@@ -1,3 +1,6 @@
+
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -5,11 +8,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vite App</title>
   <link rel="stylesheet" href="/style.css">
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden; /* Ocultar el scroll de la página */
+      background: url('/public/gameboy.jpg') no-repeat center center fixed;
+      background-size: 400px; /* Establecer un tamaño fijo en píxeles */
+      background-color: #0942f3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+  
+    .canvas_wrap > * {
+      display: block;
+      margin: 0 auto;
+      border-color: black;
+      margin-bottom: 373px;
+      margin-right: -37px;
+    }
+  </style>
 </head>
 <body>
   <div class="canvas_wrap">
-    <canvas id="tetrisCanvas" width="240" height="400"></canvas>
-    <button type="button" id="start_game">Start</button>
+    <canvas id="canvas"></canvas>
   </div>
   <script type="module" src="/main.js"></script>
 </body>
