@@ -9,8 +9,8 @@ It offers a fast development server with hot module replacement, supports modern
 ## Key Features
 
 - Canvas: utilizes the HTML5 <canvas> element for real-time graphics rendering.
-- JavaScript programming: Learn fundamental JavaScript programming concepts such as array manipulation, flow control, and event handling.
-- Game logic: implements core Tetris logic, including piece falling, rotation, line clearing, and game over detection.
+- JavaScript programming: learn fundamental JavaScript programming concepts such as array manipulation, flow control, and event handling.
+- Game logic: implements core tetris logic, including piece falling, rotation, line clearing, and game over detection.
 
 ## Considerations in the Project:
 
@@ -31,7 +31,7 @@ It offers a fast development server with hot module replacement, supports modern
 - Code Efficiency: the efficiency of the code (in terms of algorithms and performance) is not explicitly addressed. Further optimization may be required for resource-intensive scenarios.
 - User Experience (UX): the code focuses on functionality but does not include considerations for improving the overall user experience, such as animations or visual effects.
 
-### Limitations and Areas for Improvement
+### Limitations and areas for improvement
 
 - The game currently does not implement a visual reset functionality.
 - The restart option is available but can be visually improved with a more user-friendly interface.
@@ -41,7 +41,7 @@ It offers a fast development server with hot module replacement, supports modern
 
 ## Installation Guide
 
-To run the "pesitos" frontend on your computer, you'll need to install Node.js and a Node.js package manager like npm or Yarn. Then, you can follow these steps to set up your development environment:
+To run this project on your computer, you'll need to install Node.js and a Node.js package manager like npm or Yarn. Then, you can follow these steps to set up your development environment:
 
 ### Clone the project:
 
@@ -99,7 +99,6 @@ To run the "pesitos" frontend on your computer, you'll need to install Node.js a
 ### Pieces.js
 
 - Constant Definition (PIECES): defines various shapes as arrays of 0s and 1s.
-
 
 ### InputHandler.js
 
