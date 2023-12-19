@@ -8,9 +8,9 @@ It offers a fast development server with hot module replacement, supports modern
 
 ## Key Features
 
-Canvas: utilizes the HTML5 <canvas> element for real-time graphics rendering.
-JavaScript programming: Learn fundamental JavaScript programming concepts such as array manipulation, flow control, and event handling.
-Game Logic: implements core Tetris logic, including piece falling, rotation, line clearing, and game over detection.
+- Canvas: utilizes the HTML5 <canvas> element for real-time graphics rendering.
+- JavaScript programming: Learn fundamental JavaScript programming concepts such as array manipulation, flow control, and event handling.
+- Game logic: implements core Tetris logic, including piece falling, rotation, line clearing, and game over detection.
 
 ## Considerations in the Project:
 
