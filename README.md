@@ -31,6 +31,14 @@ It offers a fast development server with hot module replacement, supports modern
 - Code Efficiency: the efficiency of the code (in terms of algorithms and performance) is not explicitly addressed. Further optimization may be required for resource-intensive scenarios.
 - User Experience (UX): the code focuses on functionality but does not include considerations for improving the overall user experience, such as animations or visual effects.
 
+### Limitations and Areas for Improvement
+
+- The game currently does not implement a visual reset functionality.
+- The restart option is available but can be visually improved with a more user-friendly interface.
+- There is no level system or increasing speed as the game progresses.
+- The aesthetics and overall design of the game can be enhanced for a more appealing experience.
+- A more elaborate start and end screen can be implemented.
+
 ## Installation Guide
 
 To run the "pesitos" frontend on your computer, you'll need to install Node.js and a Node.js package manager like npm or Yarn. Then, you can follow these steps to set up your development environment:
